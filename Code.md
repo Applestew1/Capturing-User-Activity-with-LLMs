@@ -15,7 +15,7 @@ import threading
 #Gives Access to the API Key
 api_key = "<YOUR_OPENAI_KEY_HERE>"
 
-# Function to get the pathway to the downloads folder
+#Function to get the pathway to the downloads folder
 def get_downloads_folder():
     return os.path.join(os.path.expanduser("~"), "Downloads")
 
@@ -36,7 +36,7 @@ def screenshot():
         print('Active window not found!')
         return None
 
-# Function to monitor the application and take screenshots
+#Function to monitor the application and take screenshots
 def monitor_application(interval=2):
     global monitoring
     while monitoring:
@@ -52,7 +52,7 @@ def monitor_application(interval=2):
             screenshots_lock.release()
         time.sleep(interval)
 
-# Function gets the name of the application and locates where it is
+#Function gets the name of the application and locates where it is
 def start_monitoring():
     global monitoring
     app_name = entry_app_name.get()
@@ -79,17 +79,17 @@ def quit_app():
     stop_monitoring()  
     root.destroy()
 
-# Function to encode the image to base64
+#Function to encode the image to base64
 def encode_image(image_path):
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode('utf-8')
 
-# Function to check if an application is running
+#Function to check if an application is running
 def is_application_running(window_title):
     hwnd = win32gui.FindWindow(None, window_title)
     return hwnd != 0
 
-# Function to open the application
+#Function to open the application
 def open_application(app_name):
     try:
         subprocess.Popen(app_name)
@@ -97,7 +97,7 @@ def open_application(app_name):
     except Exception as e:
         print(f"Error opening application: {e}")
 
-# Function to delete all screenshots after OpenAI is asked
+#Function to delete all screenshots after OpenAI is asked
 def delete_all_screenshots():
     global screenshots_lock, screenshots
     screenshots_lock.acquire()
@@ -107,7 +107,7 @@ def delete_all_screenshots():
     screenshots.clear()
     screenshots_lock.release()
 
-# Function to interact with OpenAI's API using the API Key
+#Function to interact with OpenAI's API using the API Key
 def ask_openai():
     app_name = entry_app_name.get()
     window_title = app_name  
@@ -175,7 +175,7 @@ def ask_openai():
 def show_about():
     messagebox.showinfo("About", "Make sure you have the application open, not minimized or else this app will not be able to scan for it.")
 
-# Initialize the screenshot list, monitoring flag, and lock
+#Initialize the screenshot list, monitoring flag, and lock
 screenshots = []
 screenshots_lock = threading.Lock()
 monitoring = False
