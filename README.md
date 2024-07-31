@@ -14,6 +14,7 @@ The program uses OpenAI to help answer questions posed by users and provides cle
 - API Key
 # Installing
 - Head to python.org and follow the steps to download python 3.12 or later.
+- Install the modules in your command prompt.
 - You can download the program by copying the code.
 # Executing program
 - Step 1: Run the program and type in the name of the window you want monitored. (Example: File Explorer)
