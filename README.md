@@ -1,4 +1,4 @@
-# Capturing-User-Activity-with-LLMs
+ # Capturing-User-Activity-with-LLMs
 Usually, when you use a help menu in an application, there are some common problems: 
 - You can’t find the answer to your question.
 - You find an answer, but it is not very specific
