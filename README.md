@@ -36,4 +36,4 @@ The program uses OpenAI to help answer questions posed by users and provides cle
 # License
 - This project is licensed under the Apache License version 2.0.
 # Acknowledgments
-- OpenAI
+- Dhar Rawal
