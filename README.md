@@ -37,3 +37,6 @@ The program uses OpenAI to help answer questions posed by users and provides cle
 - This project is licensed under the Apache License version 2.0.
 # Acknowledgments
 - Dhar Rawal
+# Future Enhancements
+Instead of taking screenshots at intervals, the program can scan a video.
+Make the program run smoother.
