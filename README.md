@@ -40,3 +40,5 @@ The program uses OpenAI to help answer questions posed by users and provides cle
 # Future Enhancements
 - Instead of taking screenshots at intervals, the program can scan a video.
 - Make the program run smoother.
+# Medium Blog
+https://medium.com/@applestew441/capturing-user-activity-with-llms-edd446ddb6d6
